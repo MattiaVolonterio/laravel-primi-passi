@@ -13,7 +13,9 @@
     <div class="container">
 
         <h1 class="my-3 fw-bold">{{ $title }}</h1>
-        <h2 class="mb-3">{{ $subtitle }}</h2>
+        <h2 class="mb-4">{{ $subtitle }}</h2>
+
+        <p>Una lista di animali per provare la stampa di un'array:</p>
 
         <ul class="m-0 p-0">
             @forelse($animals as $animal)
