@@ -11,6 +11,13 @@
     <h1>{{ $title }}</h1>
     <h2>{{ $subtitle }}</h2>
 
+    <ul>
+        @forelse($animals as $animal)
+        <li>{{ $loop->iteration }}. {{ $animal }}</li>
+        @empty
+        <li>Nessun Animale</li>
+        @endforelse
+    </ul>
 </body>
 
 </html>

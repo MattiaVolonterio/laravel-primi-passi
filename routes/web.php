@@ -17,5 +17,7 @@ Route::get('/', function () {
     $title = 'Laravel Primi Passi';
     $subtitle = 'Hello World With Laravel';
 
-    return view('homepage', compact('title', 'subtitle'));
+    $animals = config('animals');
+
+    return view('homepage', compact('title', 'subtitle', 'animals'));
 });
