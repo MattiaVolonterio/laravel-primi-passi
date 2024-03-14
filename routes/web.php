@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    $title = 'Laravel Primi Passi';
+    $subtitle = 'Hello World With Laravel';
+
+    return view('homepage', compact('title', 'subtitle'));
 });
