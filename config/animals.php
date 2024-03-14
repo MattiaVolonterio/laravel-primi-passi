@@ -5,5 +5,6 @@ return [
     'gatto',
     'coniglio',
     'drago',
-    'scimmia'
+    'scimmia',
+    'mucca'
 ];
